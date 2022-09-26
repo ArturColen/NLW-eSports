@@ -1,0 +1,152 @@
+/* === Generic Styles === */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: 'Inter', sans-serif; 
+    line-height: 160%;
+}
+
+body{
+    background-image: url(../images/background.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: var(--header-color);
+}
+
+ul{
+    list-style: none;
+}
+
+/* === Colors === */
+:root{
+    --header-color: #121214;
+    --white-color: #fff;
+    --paragraph-color: #a1a1aa;
+    --section-color: #2a2634;
+    --border-channel-color: #443e54;
+}
+
+/* === Header === */
+header{
+    margin-top: 32px;
+    height: 120px;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #006400 0%, #5bd95b 50.52%, #85ff85 100%);
+    border-radius: 50%;
+    display: flex;
+    transition: transform .3s;
+    animation: fromTop .7s .2s backwards;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* === Sections === */
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section{
+    color: var(--white-color);
+    background-image: linear-gradient(90deg, #006400 0%, #5bd95b 50.52%, #85ff85 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    animation: fromBottom .7s backwards;
+}
+
+section:nth-child(1){
+    animation-delay: 0;
+}
+
+section:nth-child(2){
+    animation-delay: .3s;
+}
+
+section:nth-child(3){
+    animation-delay: .6s;
+}
+
+section div{
+    background-color: var(--section-color);
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    letter-spacing: -0.18px;
+    color: var(--paragraph-color);
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+#languages-list img{
+    width: 80px;
+    border-radius: 8px;
+}
+
+#channel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--border-channel-color);
+}
+
+/* === Animations === */
+@keyframes fromTop{
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
