@@ -22,7 +22,7 @@ ul{
     list-style: none;
 }
 
-/* === Colors === */
+/* === Color Variables === */
 :root{
     --header-color: #121214;
     --white-color: #fff;
