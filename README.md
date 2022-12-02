@@ -11,4 +11,4 @@ The main objective of the developed page is to present a little about my current
 * `CSS:` Page styling and animation
 
 # 📁 Project access
-You can [access the source code](https://github.com/ArturColen/NLW-eSports) or [view the hosted page](https://arturcolen.github.io/NLW-eSports/).
+You can [access the source code](https://github.com/ArturColen/NLW-eSports) or [view the hosted page](https://nlw-esportss.surge.sh).
