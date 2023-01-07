@@ -1,4 +1,4 @@
-# Creation of a link aggregator
+# Link aggregator
 
 Project developed during NLW eSports, an event promoted by [Rocketseat](https://www.rocketseat.com.br/) that aims to present knowledge of Front-end development to a beginner in technology studies.
 
